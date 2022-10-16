@@ -1,7 +1,7 @@
 local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Valenity/NotificationUI/main/notif"))()
 function notify(a,b,c)
     notif:message {
-        Title = "Paradise Hub | <font color='rgb(".. c ..")'>"..a.."</font>",
+        Title = "CHEATER.FUN - Roblox Scripts | <font color='rgb(".. c ..")'>"..a.."</font>",
         Description = b
     }
 end
