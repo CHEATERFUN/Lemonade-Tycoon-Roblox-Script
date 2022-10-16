@@ -1,0 +1,28 @@
+local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Valenity/NotificationUI/main/notif"))()
+function notify(a,b,c)
+    notif:message {
+        Title = "Paradise Hub | <font color='rgb(".. c ..")'>"..a.."</font>",
+        Description = b
+    }
+end
+local games = {
+    ["Halloween Night"] = 1046190774,
+    ["Lemonade Tycoon"] = 10675042838,
+    ["Slime Tower Tycoon"] = 10675066724,
+    ["Racing Rocket"] = 10676523834,
+    ["Merge Simulator"] = 10925589760,
+    ["Robowling"] = 340227283,
+    ["Theme Park Tycoon 2"] = 69184822,
+    ["Idle Heroes"] = 9264596435,
+    ["High School Life"] = 92604236,
+    ["Truck Factory Tycoon"] = 10893141806
+}
+
+notify("Initiating","Loading Paradise Hub!","255, 100, 100")
+wait(1.5)
+for _, x in pairs(games) do
+    if x == game.PlaceId then
+        notify("Found!", "Playing: ".._,"75, 100, 200")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Valenity/ParadiseHub-Open-Source/main/Games/"..x))()
+    end
+end    
